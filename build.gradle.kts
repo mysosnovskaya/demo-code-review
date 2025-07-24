@@ -35,6 +35,8 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.springframework.kafka:spring-kafka-test")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+    implementation("com.h2database:h2")
+    runtimeOnly("org.postgresql:postgresql")
 }
 
 tasks.withType<Test> {
